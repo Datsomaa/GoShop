@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <title>Thanh toán</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+
+  <!-- Bootstrap icon -->
+  <link rel="stylesheet" href="../assets/css/bootstrap_icons/bootstrap-icons.min.css">
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <!-- nav 1 -->
+    <nav class="bg-dark border-bottom border-body py-0">
+      <div class="container-md px-4">
+        <div class="d-flex justify-content-between align-items-center d-block">
+          <ul class="navbar-nav flex-row gap-4 py-2">
+            <li class="nav-item">
+              <span class="text-white">
+                <small>
+                  <i class="bi bi-telephone-fill"></i>
+                  <a class="d-inline ps-1" href="tel:0365789632">0365789632</a>
+                </small>
+              </span>
+            </li>
+            <li class="nav-item d-none d-sm-block">
+              <span class="text-white">
+                <small>
+                  <i class="bi bi-envelope-fill"></i>
+                  <a class="d-inline ps-1" href="mailto:ourbookshelf4u@gmail.com">ourbookshelf4u@gmail.com</a>
+                </small>
+              </span>
+            </li>
+          </ul>
+          <a href="../pages/login.html" class="btn btn-outline-light d-flex p-0 px-2 py-1">
+            <i class="bi bi-person-fill"></i>
+            <div><small class="ps-1">Đăng nhập</small></div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Logo -->
+    <div style="text-align: center;">
+      <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="Our Bookshelf ForYou" class="img-fluid">
+      </a>
+    </div>
+    <!-- nav 2 -->
+    <nav class="navbar navbar-expand-md border-top p-0">
+      <div class="container-md">
+        <button class="navbar-toggler focus-ring focus-ring-light my-1" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-md-0 pb-1 pb-md-0 gap-lg-4">
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <a class="nav-link active active-link opacity-75" href="../index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <a class="nav-link" href="introductionOurshelf.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <!-- <a class="nav-link" href="giasach.html">Sách</a> -->
+              <div class="dropdown">
+                <a class="nav-link" href="../pages/giasach.html">Sách</a>
+                <div class="dropdown-content">
+                    <a class="a" href="">Sách kỹ năng</a>
+                    <a class="a" href="">Sách tâm lý</a>
+                    <a class="a" href="">Sách văn học</a>
+                    <a class="a" href="">Sách tiểu sử</a>
+                </div>
+            </div>
+            </li>
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <a class="nav-link" href="tacgia.html">Tác giả</a>
+            </li>
+            <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+              <a class="nav-link" href="lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-dark my-1 me-2" type="button">
+          <a href="">
+            <i class="bi-cart-fill me-1"></i>
+            Giỏ hàng
+            <span id="cartCount" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+          </a>
+        </button>
+      </div>
+    </nav>
+    <!-- Breadcrumb -->
+    <div class="bg-white">
+      <div class="container-md py-3">
+        <nav aria-label="breadcrumb" class="ms-2">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item">Giỏ hàng</li>
+            <li class="breadcrumb-item active text-primary text-opacity-75" aria-current="page">Thanh toán</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <div class="d-flex justify-content-center py-5">
+      <div class="col-10 col-md-6 col-xl-4">
+        <div class="border border-3 border-success"></div>
+        <div class="card bg-white shadow p-4 p-sm-5 rounded-0">
+          <div class="mb-4 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="75" height="75" fill="currentColor"
+              class="bi bi-check-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+              <path
+                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+            </svg>
+          </div>
+          <div class="text-center">
+            <h1>Cảm ơn</h1>
+            <p>Đơn hàng của bạn đã đặt thành công</p>
+            <a href="../index.html" class="btn btn-outline-success">
+              <i class="bi bi-arrow-left"></i>
+              Quay lại trang chủ
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer border-top py-5">
+    <div class="container-md">
+      <div class="row px-3 mx-2">
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="fw-bold mb-4">Về OurBookShelf4U</h6>
+          <ul class="list-unstyled text-secondary">
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Giới
+                  thiệu</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Liên
+                  hệ</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Hệ
+                  thống cửa hàng</small></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h6 class="fw-bold mb-4">Hỗ trợ</h6>
+          <ul class="list-unstyled text-secondary">
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Chính
+                  sách vận chuyển</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Chính
+                  sách bảo hành</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Chính
+                  sách đổi - trả - hoàn tiền</small></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h6 class="fw-bold mb-4">Dịch vụ</h6>
+          <ul class="list-unstyled text-secondary">
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Điều
+                  khoản sử dụng</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Chính
+                  sách bảo mật thanh toán</small></a>
+            </li>
+            <li class="py-2">
+              <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                        link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Chính
+                  sách bảo mật thông tin cá nhân</small></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <form action="">
+            <h6 class="fw-bold mb-4">Đăng ký nhận thông tin</h6>
+            <div class="d-flex flex-sm-row w-100">
+              <label for="newsletter" class="visually-hidden">Email address</label>
+              <input id="newsletter" type="email" class="form-control rounded-0 focus-ring focus-ring-light"
+                style="width:300px" placeholder="Email address" required>
+              <button class="btn btn-dark rounded-0 z-3" type="submit">Đăng ký</button>
+            </div>
+          </form>
+          <div class="mt-3">
+            <h6 class="fw-bold mb-2">Theo dõi chúng tôi</h6>
+            <ul class="list-unstyled d-flex">
+              <li class="me-3">
+                <a class="link-body-emphasis" href="https://www.facebook.com/" target="_blank">
+                  <i class="bi bi-facebook fs-4"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a class="link-body-emphasis" href="https://www.instagram.com/" target="_blank">
+                  <i class="bi bi-instagram fs-4"></i>
+                </a>
+              </li>
+              <li class="me-3">
+                <a class="link-body-emphasis fs-4" href="https://twitter.com/" target="_blank">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap -->
+  <script src="../assets/js/bootstrap/popper.min.js"></script>
+  <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+
+  <!-- Custom js -->
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>

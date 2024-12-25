@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Tư duy mở</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="../assets/css/bootstrap_icons/bootstrap-icons.min.css">
+
+    <!-- Hover.css -->
+    <link rel="stylesheet" href="../assets/css/hover_css/hover-min.css">
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="../assets/css/owl_carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl_carousel/owl.theme.default.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- nav 1 -->
+        <nav class="bg-dark border-bottom border-body py-0">
+            <div class="container-md px-4">
+                <div class="d-flex justify-content-between align-items-center d-block">
+                    <ul class="navbar-nav flex-row gap-4 py-2">
+                        <li class="nav-item">
+                            <span class="text-white">
+                                <small>
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <a class="d-inline ps-1" href="tel:0365789632">0365789632</a>
+                                </small>
+                            </span>
+                        </li>
+                        <li class="nav-item d-none d-sm-block">
+                            <span class="text-white">
+                                <small>
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <a class="d-inline ps-1"
+                                        href="mailto:ourbookshelf4u@gmail.com">ourbookshelf4u@gmail.com</a>
+                                </small>
+                            </span>
+                        </li>
+                    </ul>
+                    <a href="../pages/login.html" class="btn btn-outline-light d-flex p-0 px-2 py-1">
+                        <i class="bi bi-person-fill"></i>
+                        <div><small class="ps-1">Đăng nhập</small></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Logo -->
+        <div style="text-align: center;">
+            <a href="../index.html">
+                <img src="../assets/images/logo.png" alt="Our Bookshelf ForYou" class="img-fluid">
+            </a>
+        </div>
+        <!-- nav 2 -->
+        <nav class="navbar navbar-expand-md border-top p-0">
+            <div class="container-md">
+                <button class="navbar-toggler focus-ring focus-ring-light my-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-md-0 pb-1 pb-md-0 gap-lg-4">
+                        <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                            <a class="nav-link active active-link opacity-75" href="../index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                            <a class="nav-link" href="../pages/introductionOurshelf.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                            <!-- <a class="nav-link" href="../pages/giasach.html">Sách</a> -->
+                            <div class="dropdown">
+                                <a class="nav-link" href="../pages/giasach.html">Sách</a>
+                                <div class="dropdown-content">
+                                    <a class="a" href="">Sách kỹ năng</a>
+                                    <a class="a" href="">Sách tâm lý</a>
+                                    <a class="a" href="">Sách văn học</a>
+                                    <a class="a" href="">Sách tiểu sử</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                            <a class="nav-link" href="../pages/tacgia.html">Tác giả</a>
+                        </li>
+                        <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                            <a class="nav-link" href="../pages/lienhe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-outline-dark my-1 me-2" type="button">
+                    <a href="../pages/cart.html">
+                        <i class="bi-cart-fill me-1"></i>
+                        Giỏ hàng
+                        <span id="cartCount" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </a>
+                </button>
+            </div>
+        </nav>
+        <!-- Breadcum -->
+        <div class="bg-white">
+            <div class="container-md py-3">
+                <nav aria-label="breadcrumb" class="ms-2">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="../pages/giasach.html">Sách</a></li>
+                        <li class="breadcrumb-item active text-primary text-opacity-75" aria-current="page">Tư duy mở
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Chi tiết sản phẩm -->
+    <div id="chitietsanpham" class="py-3">
+        <div class="container-md py-5 px-4">
+            <div class="row justify-content-center">
+                <div class="col-xxl-10">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <figure class="rounded-1 d-flex justify-content-center">
+                                <img src="../assets/images/books/Sách kỹ năng/Tu_duy_mo.jpg" alt="Tư duy mở"
+                                    class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="col-lg-7">
+                            <div>
+                                <h1 class="section-title divider header-font display-6">Tư duy mở</h1>
+                                <div class="py-1 fs-5">Nguyễn Anh Dũng</div>
+                                <div class="d-flex justify-content-start small text-warning mb-2 fs-4">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <div class="fs-5 fw-bold">200.000₫</div>
+                                <p class="py-3 text-secondary" style="text-align: justify;">
+                                    Con người đang sống trong thời đại công nghệ, khi mọi thứ thay đổi chóng mặt,
+                                    điều đó đòi hỏi chúng ta phải linh hoạt trong cách tư duy để bắt kịp xu hướng toàn
+                                    cầu.
+                                    Hay nói cách khác, chúng ta cần có một tư duy mở để đón nhận và khai phá kiến thức
+                                    mới,
+                                    bởi nếu chúng ta cứ khăng khăng giữ định kiến của mình thì sự phát triển sẽ đi vào
+                                    ngõ cụt.
+                                </p>
+                                <div>
+                                    <div class="btn-group" role="group">
+                                        <button id="minusButton" type="button" class="btn btn-outline-dark">
+                                            <i class="bi bi-dash"></i>
+                                        </button>
+                                        <button id="quantity" type="button" class="btn btn-outline-dark">1</button>
+                                        <button id="plusButton" type="button" class="btn btn-outline-dark">
+                                            <i class="bi bi-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <button id="detailedButton" class="btn btn-dark me-3"
+                                        data-bs-toggle="modal" data-bs-target="#addBookModal" type="submit">
+                                        <i class="bi-cart-fill me-1"></i>
+                                        Thêm vào giỏ
+                                    </button>
+                                    <div class="text-start">
+                                        <a href="../pages/cart.html" class="add-button btn btn-dark mt-auto w-100">Mua ngay</a>
+                                    </div>
+
+                                    <!-- <div class="me-3">
+                                        <a class="add-button btn btn-dark mt-auto" data-bs-toggle="modal"
+                                            data-bs-target="#addBookModal" href="#" id="detailedButton">Thêm vào giỏ</a>
+                                        <input type="text" value="4" class="d-none">
+                                    </div>
+                                    <div class="text-start">
+                                        <a href="" class="add-button btn btn-dark mt-auto w-100">Mua ngay</a>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sản phẩm liên quan -->
+    <div class="pb-5">
+        <div class="container-md">
+            <!-- Tiêu đề -->
+            <div class="text-start py-5 ps-4 border-top border-black">
+                <h2 class="header-font">Sách cùng loại:</h2>
+            </div>
+            <!-- Danh sách liên quan -->
+            <div class="mb-5 mx-4">
+                <div id="sachlquan" class="row gx-5 row-cols-xxl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1">
+                    <div class="mb-5 col ">
+                        <div class="card d-block hvr-glow">
+                            <a href="#">
+                                <img src="../assets/images/books/Sách kỹ năng/Tu_duy_nguoc.jpg" height="300px"
+                                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4"
+                                    alt="The Catcher in the Rye image">
+                                <div class="card-body ms-1">
+                                    <div class="text-start">
+                                        <!-- Tên sách -->
+                                        <p class="fw-bold mb-2">Tư duy ngược</p>
+                                        <!-- Đánh giá -->
+                                        <div class="d-flex justify-content-start small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        65.500₫
+                                        <span class="text-muted text-decoration-line-through">139.000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                                <div class="me-3">
+                                    <a class="add-button btn btn-outline-dark mt-auto w-100" data-bs-toggle="modal"
+                                        data-bs-target="#addBookModal" href="#">Thêm vào giỏ</a>
+                                    <input type="text" value="4" class="d-none">
+                                </div>
+                                <div class="text-start">
+                                    <a href="" class="add-button btn btn-dark mt-auto w-100">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card d-block hvr-glow">
+                            <a href="#">
+                                <img src="../assets/images/books/Sách kỹ năng/Flow_Dong_Chay.jpg" height="300px"
+                                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4"
+                                    alt="The Catcher in the Rye image">
+                                <div class="card-body ms-1">
+                                    <div class="text-start">
+                                        <!-- Tên sách -->
+                                        <p class="fw-bold mb-2">Flow - Dòng chảy</p>
+                                        <!-- Đánh giá -->
+                                        <div class="d-flex justify-content-start small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        228.000₫
+                                        <!-- <span class="text-muted text-decoration-line-through">139.000₫</span> -->
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                                <div class="me-3">
+                                    <a class="add-button btn btn-outline-dark mt-auto w-100" data-bs-toggle="modal"
+                                        data-bs-target="#addBookModal" href="#">Thêm vào giỏ</a>
+                                    <input type="text" value="4" class="d-none">
+                                </div>
+                                <div class="text-start">
+                                    <a href="" class="add-button btn btn-dark mt-auto w-100">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card d-block hvr-glow">
+                            <a href="#">
+                                <img src="../assets/images/books/Sách kỹ năng/Atomic_Habits.jpg" height="300px"
+                                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4"
+                                    alt="The Catcher in the Rye image">
+                                <div class="card-body ms-1">
+                                    <div class="text-start">
+                                        <!-- Tên sách -->
+                                        <p class="fw-bold mb-2">Atomic Habits - Thay đổi tí hon hiệu quả bất ngờ</p>
+                                        <!-- Đánh giá -->
+                                        <div class="d-flex justify-content-start small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        141.000₫
+                                        <span class="text-muted text-decoration-line-through">189.000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                                <div class="me-3">
+                                    <a class="add-button btn btn-outline-dark mt-auto w-100" data-bs-toggle="modal"
+                                        data-bs-target="#addBookModal" href="#">Thêm vào giỏ</a>
+                                    <input type="text" value="4" class="d-none">
+                                </div>
+                                <div class="text-start">
+                                    <a href="" class="add-button btn btn-dark mt-auto w-100">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card d-block hvr-glow">
+                            <a href="#">
+                                <img src="../assets/images/books/Sách kỹ năng/Yeu_nhung_dieu_khong_hoan_hao.jpg"
+                                    height="300px"
+                                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4"
+                                    alt="The Catcher in the Rye image">
+                                <div class="card-body ms-1">
+                                    <div class="text-start">
+                                        <!-- Tên sách -->
+                                        <p class="fw-bold mb-2">Yêu những điều không hoàn hảo</p>
+                                        <!-- Đánh giá -->
+                                        <div class="d-flex justify-content-start small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        104.000₫
+                                        <span class="text-muted text-decoration-line-through">139.000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                                <div class="me-3">
+                                    <a class="add-button btn btn-outline-dark mt-auto w-100" data-bs-toggle="modal"
+                                        data-bs-target="#addBookModal" href="#">Thêm vào giỏ</a>
+                                    <input type="text" value="4" class="d-none">
+                                </div>
+                                <div class="text-start">
+                                    <a href="" class="add-button btn btn-dark mt-auto w-100">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer border-top py-5">
+        <div class="container-md">
+            <div class="row px-3 mx-2">
+                <div class="col-sm-6 col-lg-2">
+                    <h6 class="fw-bold mb-4">Về OurBookShelf4U</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="py-2">
+                            <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                            link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href=""><small>Giới thiệu</small></a>
+                        </li>
+                        <li class="py-2">
+                            <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                            link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href=""><small>Liên hệ</small></a>
+                        </li>
+                        <li class="py-2">
+                            <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                            link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href=""><small>Hệ
+                                    thống cửa hàng</small></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h6 class="fw-bold mb-4">Hỗ trợ</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="py-2">
+                            <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                            link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href=""><small>Chính sách vận chuyển</small></a>
+                        </li>
+                        <li class="py-2">
+                            <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                            link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href=""><small>Chính sách bảo hành</small></a>
+                        </li>
+                        <li class="py-2">
+                            <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                            link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href=""><small>Chính sách đổi - trả - hoàn tiền</small></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h6 class="fw-bold mb-4">Dịch vụ</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="py-2">
+                            <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                            link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href=""><small>Điều khoản sử dụng</small></a>
+                        </li>
+                        <li class="py-2">
+                            <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                            link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href=""><small>Chính sách bảo mật thanh toán</small></a>
+                        </li>
+                        <li class="py-2">
+                            <a class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover 
+                            link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href=""><small>Chính sách bảo mật thông tin cá nhân</small></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <form action="">
+                        <h6 class="fw-bold mb-4">Đăng ký nhận thông tin</h6>
+                        <div class="d-flex flex-sm-row w-100">
+                            <label for="newsletter" class="visually-hidden">Email address</label>
+                            <input id="newsletter" type="email"
+                                class="form-control rounded-0 focus-ring focus-ring-light" style="width:300px"
+                                placeholder="Email address" required>
+                            <button class="btn btn-dark rounded-0 z-3" type="submit">Đăng ký</button>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <h6 class="fw-bold mb-2">Theo dõi chúng tôi</h6>
+                        <ul class="list-unstyled d-flex">
+                            <li class="me-3">
+                                <a class="link-body-emphasis" href="https://www.facebook.com/" target="_blank">
+                                    <i class="bi bi-facebook fs-4"></i>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a class="link-body-emphasis" href="https://www.instagram.com/" target="_blank">
+                                    <i class="bi bi-instagram fs-4"></i>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a class="link-body-emphasis fs-4" href="https://twitter.com/" target="_blank">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap -->
+    <script src="../assets/js/bootstrap/popper.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="../assets/js/jquery/jquery.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="../assets/js/owl_carousel/owl.carousel.min.js"></script>
+
+    <!-- Owl Carousel config -->
+    <script src="../js/owl-carousel-config.js"></script>
+    <!-- Custom js -->
+</body>
+
+</html>
