@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <title>Trang chủ</title>
+  
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap_icons/bootstrap-icons.min.css">
+  
+    <!-- Hover.css -->
+    <link rel="stylesheet" href="assets/css/hover_css/hover-min.css">
+
+    <!-- Owl carousel -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/owl_carousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/owl_carousel/owl.theme.default.min.css"
+    />
+  
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .container p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- nav 1 -->
+      <nav class="bg-dark border-bottom border-body py-0">
+        <div class="container-md px-4">
+          <div class="d-flex justify-content-between align-items-center d-block">
+            <ul class="navbar-nav flex-row gap-4 py-2">
+              <li class="nav-item">
+                <span class="text-white">
+                  <small>
+                    <i class="bi bi-telephone-fill"></i>
+                    <a class="d-inline ps-1" href="tel:0983173683">0983173683</a>
+                  </small>
+                </span>
+              </li>
+              <li class="nav-item d-none d-sm-block">
+                <span class="text-white">
+                  <small>
+                    <i class="bi bi-envelope-fill"></i>
+                    <a class="d-inline ps-1" href="mailto:phamduccanh@gmail.com">phamduccanh@gmail.com</a>
+                  </small>
+                </span>
+              </li>
+            </ul>
+            <a href="pages/login.html" class="btn btn-outline-light d-flex p-0 px-2 py-1">
+              <i class="bi bi-person-fill"></i>
+              <div><small class="ps-1">Đăng nhập</small></div>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Logo -->
+      <div style="text-align: center;">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+        </a>
+      </div>
+      <!-- nav 2 -->
+      <nav class="navbar navbar-expand-md border-top p-0">
+        <div class="container-md">
+          <button class="navbar-toggler focus-ring focus-ring-light my-1" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-md-0 pb-1 pb-md-0 gap-lg-4">
+              <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                <a class="nav-link active active-link
+                  link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                <a class="nav-link" href="pages/introductionOurshelf.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                <div class="dropdown">
+                  <a class="nav-link " href="pages/sanpham.html">Sản phẩm</a>
+                  <div class="dropdown-content">
+                    <a class="a" href="#" data-category="phong-ngu">Phòng ngủ</a>
+                    <a class="a" href="#" data-category="phong-khach">Phòng khách</a>
+                    <a class="a" href="#" data-category="phong-an">Phòng bếp</a>
+                    <a class="a" href="#" data-category="phong-lam-viec">Phòng làm việc</a>
+                  </div>
+              </div>
+              </li>
+              <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                <a class="nav-link" href="../pages/bosuutap.html">Bộ sưu tập</a>
+              </li>
+              <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                <a class="nav-link" href="pages/khuyenmai.html">Khuyến mãi</a>
+              </li>
+              <li class="nav-item fw-bold ps-2 ps-md-0 py-1 py-md-2">
+                <a class="nav-link" href="pages/lienhe.html">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-outline-dark my-1 me-2" type="button">
+            <a href="pages/cart.html">
+              <i class="bi-cart-fill me-1"></i>
+              Giỏ hàng
+              <span id="cartCount" class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            </a>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Carousel -->
+      <div
+        id="carouselAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Tạo thanh chỉ báo bên dưới -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselAutoplaying"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselAutoplaying"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselAutoplaying"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <!-- Slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/carousel/Slide_1.png"
+              class="d-block w-100"
+              alt="slide-1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/carousel/Slide_2.png"
+              class="d-block w-100"
+              alt="slide2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/carousel/Slide_3.png"
+              class="d-block w-100"
+              alt="slide-3"
+            />
+          </div>
+        </div>
+        <!-- Tạo left và right control icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- Sản phẩm mới -->
+      <div id="Sachmoi" class="container-md">
+        <!-- Tiêu đều -->
+        <div class="text-center my-5">
+          <h1 class="mt-3 header-font">Sản phẩm bán chạy</h1>
+        </div>
+        <!-- Danh sách sp mới -->
+        <div id="dssachmoi" class="owl-carousel owl-theme">
+          <div class="itemsachmoi">
+            <div class="py-2">
+              <div class="card mx-4 d-block hvr-glow">
+                <a href="./pages/tuquanao.html">
+                  <!-- Book image -->
+                  <img
+                    src="./assets/images/sp/Phòng khách/bansofa.jpg"
+                    height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom mb-2"
+                    alt="Tư duy mở"
+                  />
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Name -->
+                      <p class="d-block fw-bold mb-2">Bàn Sofa</p>
+                      <!-- Review -->
+                      <div
+                        class="d-flex justify-content-start small text-warning mb-2"
+                      >
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Price -->
+                      1,338.000₫
+                    </div>
+                  </div>
+                </a>
+                <div
+                  class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex"
+                >
+                <div class="me-3">
+                  <a href="" class="add-button btn btn-dark mt-auto w-100"
+                    >Mua ngay</a
+                  >
+                </div>
+                <div class="text-start">
+                  <a
+                    class="add-button btn btn-outline-dark mt-auto w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addBookModal"
+                    href="#"
+                    >Thêm vào giỏ</a
+                  >
+                  <input type="text" value="4" class="d-none" />
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itemsachmoi">
+            <div class="py-2">
+              <div class="card mx-4 d-block hvr-glow">
+                <a href="">
+                  <!-- Book image -->
+                  <img
+                    src="./assets/images/sp/Phòng khách/sofa.jpg"
+                    height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom mb-2"
+                    alt="Tư duy mở"
+                  />
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Name -->
+                      <p class="d-block fw-bold mb-2">Sofa</p>
+                      <!-- Review -->
+                      <div
+                        class="d-flex justify-content-start small text-warning mb-2"
+                      >
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Price -->
+                      108.000₫
+                    </div>
+                  </div>
+                </a>
+                <div
+                  class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex"
+                >
+                <div class="me-3">
+                  <a href="" class="add-button btn btn-dark mt-auto w-100"
+                    >Mua ngay</a
+                  >
+                </div>
+                <div class="text-start">
+                  <a
+                    class="add-button btn btn-outline-dark mt-auto w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addBookModal"
+                    href="#"
+                    >Thêm vào giỏ</a
+                  >
+                  <input type="text" value="4" class="d-none" />
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itemsachmoi">
+            <div class="py-2">
+              <div class="card mx-4 d-block hvr-glow">
+                <a href="">
+                  <!-- Image -->
+                  <img
+                    src="./assets/images/sp/Phòng khách/tugiay.jpg"
+                    height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom mb-2"
+                    alt="Tư duy mở"
+                  />
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Name -->
+                      <p class="d-block fw-bold mb-2">Tủ giàyr</p>
+                      <!-- Review -->
+                      <div
+                        class="d-flex justify-content-start small text-warning mb-2"
+                      >
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Price -->
+                      235.000₫
+                    </div>
+                  </div>
+                </a>
+                <div
+                  class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex"
+                >
+                <div class="me-3">
+                  <a href="" class="add-button btn btn-dark mt-auto w-100"
+                    >Mua ngay</a
+                  >
+                </div>
+                <div class="text-start">
+                  <a
+                    class="add-button btn btn-outline-dark mt-auto w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addBookModal"
+                    href="#"
+                    >Thêm vào giỏ</a
+                  >
+                  <input type="text" value="4" class="d-none" />
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itemsachmoi">
+            <div class="py-2">
+              <div class="card mx-4 d-block hvr-glow">
+                <a href="">
+                  <!-- Book image -->
+                  <img
+                    src="./assets/images/sp/Phòng khách/tutivi.jpg"
+                    height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom mb-2"
+                    alt="Tư duy mở"
+                  />
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Name -->
+                      <p class="d-block fw-bold mb-2">Tủ tivi</p>
+                      <!-- Review -->
+                      <div
+                        class="d-flex justify-content-start small text-warning mb-2"
+                      >
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Price -->
+                      90.000₫
+                    </div>
+                  </div>
+                </a>
+                <div
+                  class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex"
+                >
+                <div class="me-3">
+                  <a href="" class="add-button btn btn-dark mt-auto w-100"
+                    >Mua ngay</a
+                  >
+                </div>
+                <div class="text-start">
+                  <a
+                    class="add-button btn btn-outline-dark mt-auto w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addBookModal"
+                    href="#"
+                    >Thêm vào giỏ</a
+                  >
+                  <input type="text" value="4" class="d-none" />
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itemsachmoi">
+            <div class="py-2">
+              <div class="card mx-4 d-block hvr-glow">
+                <a href="">
+                  <!-- Image -->
+                  <img
+                    src="./assets/images/sp/Phòng làm việc/banlamviec.jpg"
+                    height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom mb-2"
+                    alt="Tư duy mở"
+                  />
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Name -->
+                      <p class="d-block fw-bold mb-2">Bàn làm việc</p>
+                      <!-- Review -->
+                      <div
+                        class="d-flex justify-content-start small text-warning mb-2"
+                      >
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Price -->
+                      159.000₫
+                    </div>
+                  </div>
+                </a>
+                <div
+                  class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex"
+                >
+                <div class="me-3">
+                  <a href="" class="add-button btn btn-dark mt-auto w-100"
+                    >Mua ngay</a
+                  >
+                </div>
+                <div class="text-start">
+                  <a
+                    class="add-button btn btn-outline-dark mt-auto w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addBookModal"
+                    href="#"
+                    >Thêm vào giỏ</a
+                  >
+                  <input type="text" value="4" class="d-none" />
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itemsachmoi">
+            <div class="py-2">
+              <div class="card mx-4 d-block hvr-glow">
+                <a href="">
+                  <!-- Image -->
+                  <img
+                    src="./assets/images/sp/Phòng làm việc/ghevanphong.jpg"
+                    height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom mb-2"
+                    alt="Tư duy mở"
+                  />
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Name -->
+                      <p class="d-block fw-bold mb-2">Ghế văn phòng</p>
+                      <!-- Review -->
+                      <div
+                        class="d-flex justify-content-start small text-warning mb-2"
+                      >
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Price -->
+                      228.000₫
+                    </div>
+                  </div>
+                </a>
+                <div
+                  class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex"
+                >
+                  <div class="me-3">
+                    <a href="" class="add-button btn btn-dark mt-auto w-100"
+                      >Mua ngay</a
+                    >
+                  </div>
+                  <div class="text-start">
+                    <a
+                      class="add-button btn btn-outline-dark mt-auto w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#addBookModal"
+                      href="#"
+                      >Thêm vào giỏ</a
+                    >
+                    <input type="text" value="4" class="d-none" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sp bán chạy -->
+      <div id="sachbanchay" class="py-5 section-color">
+        <div class="container-md py-5">
+          <div class="row justify-content-center">
+            <div class="col-xxl-8">
+              <div class="row">
+                <div class="col-lg-6">
+                  <figure
+                    class="p-0 me-lg-0 bg-secondary-subtle rounded-2 d-flex justify-content-center"
+                  >
+                    <img
+                      src="assets/images/carousel/chair1.jpg"
+                      alt="quangcao"
+                      class="img-fluid rounded-1"
+                    />
+                  </figure>
+                </div>
+                <div class="col-lg-6">
+                  <div class="spsach">
+                    <h1
+                      class="section-title header-font pb-lg-5 pt-3 display-15"
+                    >
+                    Trải nghiệm mới sẽ được mở khóa
+                    </h1>
+                    <div class="">
+                      <p class="py-3" style="text-align: justify">
+                        nâng cao nội thất của bạn với lựa chọn được chọn lọc của chúng tôi
+                        của đồ nội thất và phụ kiện
+                      </p>
+                      <div class="fs-5 fw-bold pb-3">1.180.000₫</div>
+                      <!-- font size, font weight -->
+                      <div class="me-3">
+                        <a
+                          class="add-button btn btn-dark mt-auto w-100"
+                          data-bs-toggle="modal"
+                          data-bs-target="#addSpModal"
+                          href="#"
+                          >Mua ngay</a
+                        >
+                        <input type="text" value="4" class="d-none" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sp nổi bật -->
+      <div id="sanphamnoibat" class="container-md">
+        <!-- Tiêu đề -->
+        <div class="text-center my-5">
+          <h1 class="header-font">NỘI THẤT CẢM HỨNG</h1>
+        </div>
+        <!-- Danh sách sp nổi bật -->
+        <div class="container mb-5">
+          <div
+            class="row gx-5 row-cols-xxl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1"
+          >
+            <div class="spnb">
+              <div class="col mb-5">
+                <div class="card d-block hvr-glow">
+                  <a href="#">
+                    <img
+                      src="assets/images/sp/Phòng ngủ/tuquanao.jpg"
+                      height="300px"
+                      class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4"
+                      alt="Tủ Quần Áo Gỗ MOHO DALUMD 2 Cánh"
+                    />
+                    <div class="card-body ms-1">
+                      <div class="text-start">
+                        <!-- Tên sp -->
+                        <p class="fw-bold mb-2">Tủ Quần Áo Gỗ 2 Cánh</p>
+                        <!-- Đánh giá -->
+                        <div
+                          class="d-flex justify-content-start small text-warning mb-2"
+                        >
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                        </div>
+                        65.500₫
+                        <span class="text-muted text-decoration-line-through"
+                          >139.000₫</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                  <div
+                    class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex"
+                  >
+                    <div class="me-3">
+                      <a
+                        class="add-button btn btn-outline-dark mt-auto w-100"
+                        data-bs-toggle="modal"
+                        data-bs-target="#addSpModal"
+                        href="#"
+                        >Thêm vào giỏ</a
+                      >
+                      <input type="text" value="4" class="d-none" />
+                    </div>
+                    <div class="text-start">
+                      <a href="" class="add-button btn btn-dark mt-auto w-100"
+                        >Mua ngay</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-5 col" data-category="phong-ngu">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng ngủ/trangdiem.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4" alt="Bàn Trang Điểm Gỗ Đa Năng MOHO VIENNA 202 image">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Bàn Trang Điểm Gỗ Đa Năng MOHO VIENNA 202</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      365.000₫
+                      <span class="text-muted text-decoration-line-through">579.000₫</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="3">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col" data-category="phong-ngu">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng ngủ/trangdiem1.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4"
+                    alt="Bàn Trang Điểm Gỗ Đa Năng MOHO VIENNA 202 Màu Tự Nhiên image">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Bàn Trang Điểm Gỗ Đa Năng MOHO VIENNA 202 Màu Tự Nhiên</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      409.000₫
+                      <span class="text-muted text-decoration-line-through">500.000₫</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="4">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col" data-category="phong-khach">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng khách/sofa.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4" alt="Ghế Sofa MOHO LYNGBY Góc L">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Ghế Sofa MOHO LYNGBY Góc L</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      906.000₫
+                      <span class="text-muted text-decoration-line-through">1.229.000₫</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="5">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col" data-category="phong-khach">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng khách/bansofa.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4"
+                    alt="Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ MOHO OSLO 901">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Bàn Sofa – Bàn Cafe – Bàn Trà Gỗ MOHO OSLO 901</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      785.000₫
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="6">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col" data-category="phong-khach">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng khách/tutivi.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4" alt="Tủ Kệ Tivi Gỗ MOHO OSLO 201">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Tủ Kệ Tivi Gỗ MOHO OSLO 201</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      670.000₫
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="7">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col" data-category="phong-khach">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng khách/tugiay.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4" alt="Tủ Giày - Tủ Trang Trí Gỗ MOHO VLINE 601">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Tủ Giày - Tủ Trang Trí Gỗ MOHO VLINE 601</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      435.000₫
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="8">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col" data-category="phong-an">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng ăn/banan1.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4" alt="Bàn Ăn Gỗ Cao Su Tự Nhiên MOHO VLINE 601 90cm image">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Bàn Ăn Gỗ Cao Su Tự Nhiên MOHO VLINE 601 90cm</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      780.000₫
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="9">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="./sp/1984.html">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col" data-category="phong-an">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng ăn/ghean.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4"
+                    alt="Ghế Ăn Gỗ Cao Su Tự Nhiên MOHO VLINE 601 image">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Ghế Ăn Gỗ Cao Su Tự Nhiên MOHO VLINE 601</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      319.000₫
+                      <span class="text-muted text-decoration-line-through">449.000₫</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="10">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col" data-category="phong-an">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng ăn/bobanghe.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4" alt="Bộ Bàn Ăn 4 Ghế Gỗ MOHO MILAN 901">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Bộ Bàn Ăn 4 Ghế Gỗ MOHO MILAN 901</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      887.000₫
+                      <span class="text-muted text-decoration-line-through">1.009.000₫</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="11">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col" data-category="phong-an">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Sp image -->
+                  <img src="assets/images/sp/Phòng ăn/banan2.jpg" height="300"
+                    class="card-img-top object-fit-scale bg-secondary-subtle border-bottom py-4" alt="Bàn Ăn Gỗ Cao Su Tự Nhiên HOBRO 301">
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Sp name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Bàn Ăn Gỗ Cao Su Tự Nhiên HOBRO 301</p>
+                      <!-- Sp reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Sp price-->
+                      563.000₫
+                      <span class="text-muted text-decoration-line-through">699.000₫</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="add-button btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                      data-bs-target="#addSpModal">Thêm vào giỏ</button>
+                    <input class="d-none" value="12">
+                  </div>
+                  <div class="text-start">
+                    <a class="btn btn-dark mt-auto" href="">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer border-top py-5">
+      <div class="container-md">
+        <div class="row px-3 mx-2">
+          <div class="col-sm-6 col-lg-2">
+            <h6 class="fw-bold mb-4">Về GoShop</h6>
+            <ul class="list-unstyled text-secondary">
+              <li class="py-2">
+                <a
+                  class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href=""
+                  ><small>Giới thiệu</small></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href=""
+                  ><small>Liên hệ</small></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href=""
+                  ><small>Hệ thống cửa hàng</small></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h6 class="fw-bold mb-4">Hỗ trợ</h6>
+            <ul class="list-unstyled text-secondary">
+              <li class="py-2">
+                <a
+                  class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href=""
+                  ><small>Vận chuyển</small></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href=""
+                  ><small>Bảo hành</small></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href=""
+                  ><small>Đổi - trả - hoàn tiền</small></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h6 class="fw-bold mb-4">Dịch vụ</h6>
+            <ul class="list-unstyled text-secondary">
+              <li class="py-2">
+                <a
+                  class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href=""
+                  ><small>Điều khoản sử dụng</small></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href=""
+                  ><small>Bảo mật thanh toán</small></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  class="text-decoration-underline link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href=""
+                  ><small>Bảo mật thông tin cá nhân</small></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <form action="">
+              <h6 class="fw-bold mb-4">Đăng ký nhận thông tin</h6>
+              <div class="d-flex flex-sm-row w-100">
+                <label for="newsletter" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter"
+                  type="email"
+                  class="form-control rounded-0 focus-ring focus-ring-light"
+                  style="width: 300px"
+                  placeholder="Email address"
+                  required
+                />
+                <button class="btn btn-dark rounded-0 z-3" type="submit">
+                  Đăng ký
+                </button>
+              </div>
+            </form>
+            <div class="mt-3">
+              <h6 class="fw-bold mb-2">Theo dõi chúng tôi</h6>
+              <ul class="list-unstyled d-flex">
+                <li class="me-3">
+                  <a
+                    class="link-body-emphasis"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                  >
+                    <i class="bi bi-facebook fs-4"></i>
+                  </a>
+                </li>
+                <li class="me-3">
+                  <a
+                    class="link-body-emphasis"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                  >
+                    <i class="bi bi-instagram fs-4"></i>
+                  </a>
+                </li>
+                <li class="me-3">
+                  <a
+                    class="link-body-emphasis fs-4"
+                    href="https://twitter.com/"
+                    target="_blank"
+                  >
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="./assets/js/bootstrap/popper.min.js"></script>
+    <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="./assets/js/jquery/jquery.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="./assets/js/owl_carousel/owl.carousel.min.js"></script>
+
+    <!-- Owl Carousel config -->
+    <script src="./js/owl-carousel-config.js"></script>
+    <!-- Custom js -->
+  </body>
+</html>
